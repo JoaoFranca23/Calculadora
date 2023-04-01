@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="fundo">
+      <div class="calculadora">
+        <h1>Calculadora</h1>
+        <p class="resultado"></p>
+        <table>
+          <tr>
+            <td><button onclick="clean()" class="button">C</button></td>
+            <td>
+              <button onclick="back()" class="button">&lt;</button>
+            </td>
+            <td><button onclick="verificar('/')" class="button">/</button></td>
+            <td><button onclick="verificar('*')" class="button">X</button></td>
+          </tr>
+
+          <tr>
+            <td><button onclick="verificar('7')" class="button">7</button></td>
+            <td><button onclick="verificar('8')" class="button">8</button></td>
+            <td><button onclick="verificar('9')" class="button">9</button></td>
+            <td><button onclick="verificar('-')" class="button">-</button></td>
+          </tr>
+
+          <tr>
+            <td><button onclick="verificar('4')" class="button">4</button></td>
+            <td><button onclick="verificar('5')" class="button">5</button></td>
+            <td><button onclick="verificar('6')" class="button">6</button></td>
+            <td><button onclick="verificar('+')" class="button">+</button></td>
+          </tr>
+
+          <tr>
+            <td><button onclick="verificar('1')" class="button">1</button></td>
+            <td><button onclick="verificar('2')" class="button">2</button></td>
+            <td><button onclick="verificar('3')" class="button">3</button></td>
+            <td rowspan="2">
+              <button onclick="calcular()" class="button" style="height: 105px">
+                =
+              </button>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <button
+                onclick="verificar('0')"
+                class="button"
+                style="width: 105px"
+              >
+                0
+              </button>
+            </td>
+            <td><button onclick="verificar('.')" class="button">.</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
